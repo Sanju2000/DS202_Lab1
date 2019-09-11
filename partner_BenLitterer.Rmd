@@ -1,0 +1,13 @@
+---
+title: "partner_BenLitterer"
+author: "Ben Litterer"
+date: "9/11/2019"
+output: html_document
+---
+
+# Partner (Ben's) Information 
+- Name: Benjamin Litterer 
+- Github: blitt2018
+- The message from the last commit says "add files via upload". It looks like she added the owner_ files most recently.  The id for the commit is d6f96ac8a52560df981d4c50b056726f59aa89a2
+- I was successfully able to open the owner_.Rmd file
+- For me, I think it is important to become comfortable creating, deleting, and navigating files/directories before using git. 
