@@ -1,0 +1,33 @@
+---
+title: "owner_SanjanaAddagarla"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Infomation:
+
+
+**Name:** Sanjana Addagarla
+
+**Field of Study:** My major is Managment Information Systems and it combines the two areas of business and technology.
+
+**Tools/Strategies:** Three tools I use to organize my work are Microsoft Office, my phone, and my laptop 
+
+**Fun Fact:** I have been to 40 states. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
