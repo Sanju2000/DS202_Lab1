@@ -372,6 +372,58 @@ summary {
 <p><strong>Field of Study:</strong> My major is Managment Information Systems and it combines the two areas of business and technology.</p>
 <p><strong>Tools/Strategies:</strong> Three tools I use to organize my work are Microsoft Office, my phone, and my laptop</p>
 <p><strong>Fun Fact:</strong> I have been to 40 states.</p>
+<hr />
+</div>
+<div id="understanding-concepts" class="section level2">
+<h2>Understanding Concepts:</h2>
+<p><strong>1).</strong> The difference between Git and GitHub is that Git is a control system where one would place and manage thier source code history. You would basically do all your coding in this. Github is a hosting service where the repositories of Git are stored and can be seen for others. GitHub shows the code segment you performed, but you cannot directly code into GitHub.</p>
+<p><strong>2).</strong> Git and Github can be used independently. Using Git indepently is useful for those who do not want to post thier code publicly or are not interested in collaborating with others. A disadvantage is that you cannot use GitHub without Git. You need to Git in order to use GitHub.</p>
+<p><strong>3).</strong> A Git repository is a .git folder inside a project. It tracks all the changes made to files in the project. It stores packages that allow the user to use. The following steps to create a repository in Git are as followed:</p>
+<pre><code>git init 
+git add (these are any files you have in the selected placement on your comuputer)
+git commit -m &quot;the message of your file&quot;
+git status
+</code></pre>
+<hr />
+</div>
+<div id="coding-exercises" class="section level2">
+<h2>Coding Exercises:</h2>
+<p><strong>1.)</strong></p>
+<pre class="r"><code>X = c(47,34,33,65,37,NA,43,NA,11,NA,23,NA)
+length(which(is.na(X)))</code></pre>
+<pre><code>## [1] 4</code></pre>
+<p><strong>2.)</strong></p>
+<pre class="r"><code>age = c(25,30,45,60,12,41)
+   smoker = c('T','F','T','F','F','F')
+   weight = c(120,137,0,168,91,142)
+   example_data = data.frame(age,smoker,weight)
+weight [weight &gt; 0]</code></pre>
+<pre><code>## [1] 120 137 168  91 142</code></pre>
+<p><strong>3.)</strong></p>
+<pre class="r"><code>#First Part
+x = c(2, 45, NA, 75, NA, 11)
+number_of_NA = function(in_x){
+  return (mean(is.na(in_x)))
+}
+number_of_NA(x)  
+
+#Second Part
+x = c(2, 45, NA, 75, NA, 11)
+fraction_of_vector_sum = function (in_x){
+  return(x/sum(in_x, na.rm = TRUE))
+}
+fraction_of_vector_sum(x)</code></pre>
+<p><strong>4.)</strong></p>
+<pre class="r"><code>both_na = function (x_vec, y_vec){
+  x_nas = is.na(x_vec)
+  y_nas = is.na(y_vec)
+  return(length(x_vec[x_nas &amp; y_nas]))
+}
+vec_1 = c(NA, 5, 6, 23, NA, NA)
+vec_2 = c(NA, 45, 2, 7, NA, 9)
+both_na(vec_1, vec_2)</code></pre>
+<pre><code>## [1] 2</code></pre>
+<hr />
 </div>
 
 
