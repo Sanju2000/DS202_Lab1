@@ -18,6 +18,80 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Fun Fact:** I have been to 40 states. 
 
+-------------------------------------------------------
+
+
+## Understanding Concepts: ##
+
+**1).** The difference between Git and GitHub is that Git is a control system where one would place and manage thier source code history. You would basically do all your coding in this. Github is a hosting service where the repositories of Git are stored and can be seen for others. GitHub shows the code segment you performed, but you cannot directly code into GitHub. 
+
+**2).** Git and Github can be used independently. Using Git indepently is useful for those who do not want to post thier code publicly or are not interested in collaborating with others. A disadvantage is that you cannot use GitHub without Git. You need to Git in order to use GitHub. 
+
+**3).** A Git repository is a .git folder inside a project. It tracks all the changes made to files in the project. It stores packages that allow the user to use. The following steps to create a repository in Git are as followed: 
+````````````
+git init 
+git add (these are any files you have in the selected placement on your comuputer)
+git commit -m "the message of your file"
+git status
+
+````````````
+
+--------------------------------------------------------
+
+
+## Coding Exercises: ##
+
+**1.)** 
+````{r}
+X = c(47,34,33,65,37,NA,43,NA,11,NA,23,NA)
+length(which(is.na(X)))
+
+``````
+
+
+**2.)** 
+`````{r}
+age = c(25,30,45,60,12,41)
+   smoker = c('T','F','T','F','F','F')
+   weight = c(120,137,0,168,91,142)
+   example_data = data.frame(age,smoker,weight)
+weight [weight > 0]
+`````
+
+**3.)** 
+````{r, eval=FALSE}
+
+#First Part
+x = c(2, 45, NA, 75, NA, 11)
+number_of_NA = function(in_x){
+  return (mean(is.na(in_x)))
+}
+number_of_NA(x)  
+
+#Second Part
+x = c(2, 45, NA, 75, NA, 11)
+fraction_of_vector_sum = function (in_x){
+  return(x/sum(in_x, na.rm = TRUE))
+}
+fraction_of_vector_sum(x)
+
+
+`````
+
+**4.)** 
+```{r}
+both_na = function (x_vec, y_vec){
+  x_nas = is.na(x_vec)
+  y_nas = is.na(y_vec)
+  return(length(x_vec[x_nas & y_nas]))
+}
+vec_1 = c(NA, 5, 6, 23, NA, NA)
+vec_2 = c(NA, 45, 2, 7, NA, 9)
+both_na(vec_1, vec_2)
+```
+
+-----------------------------
+
 
 
 
